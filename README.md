@@ -400,7 +400,7 @@ Keep the `key` values unique. Icon names come from the `ICONS` list in the same 
 
 <div align="center">
 <details>
-Initially made for the **PhD follow-up committee**, CSI in french.
+Initially made for the <b>PhD follow-up committee</b>, CSI in french.
 </details>
 </div>
 
@@ -416,7 +416,5 @@ University of Toulouse |
 </div>
 
 <div align="center">
-<details>
-*Questions? Ideas? Open an [issue](../../issues) or contact the committee.*
-</details>
+<b>Questions? Ideas? Open an [issue](../../issues) or contact the committee.</b>
 </div>
