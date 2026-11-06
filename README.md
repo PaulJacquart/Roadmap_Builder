@@ -238,7 +238,7 @@ Under the timeline, **Count it every year** keeps track of what the CSI asks abo
 
 <!-- 📸 Counter tile with a goal: "6 / 10" + progress bar, and one box with ✓ -->
 <img src="illustrations/counters.gif" alt="Counters with goals and progress bars" width="1500">
-
+![Counters Demo](illustrations/counters.webp)
 ---
 
 ### 9. Save and reopen your work
