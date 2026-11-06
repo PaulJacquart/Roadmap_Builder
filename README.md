@@ -237,7 +237,7 @@ Under the timeline, **Count it every year** keeps track of what the CSI asks abo
 > Set your goals **at the beginning of each year**, then update the counters before each CSI.
 
 <!-- 📸 Counter tile with a goal: "6 / 10" + progress bar, and one box with ✓ -->
-<video src="illustrations/counters.mp4" autoplay loop muted playsinline style="max-width: 100%;">
+<video src="illustrations/counters.mp4?raw=true" autoplay loop muted playsinline width="100%">
 </video>
 
 ---
