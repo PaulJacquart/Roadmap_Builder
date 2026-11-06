@@ -16,7 +16,7 @@ count what you achieve each year, and export a clean poster in PowerPoint or PDF
 <!-- 📸 HERO IMAGE: a full screenshot of the builder with a realistic roadmap -->
 <img src="./illustrations/Global_screenshot.png" alt="Overview of the PhD Roadmap Builder" width="1920">
 
-[**⬇️ Download the builder**](PhD_Roadmap_Builder.html) · [Quick start](#-quick-start-2-minutes) · [Tutorial](#-tutorial) · [FAQ](#-faq--troubleshooting)
+[**⬇️ Download the builder**](/documents/PhD_Roadmap_Builder.html) · [Quick start](#-quick-start-2-minutes) · [Tutorial](#-tutorial) · [FAQ](#-faq--troubleshooting)
 
 </div>
 
@@ -64,7 +64,7 @@ A PhD is long, and it is easy to lose track of where you are. The **CSI** (*comi
 
 | File | What it is | Who it's for |
 |---|---|---|
-| [`PhD_Roadmap_Builder.html`](PhD_Roadmap_Builder.html) | The interactive roadmap builder. **One file, works offline.** | Every PhD student |
+| [`PhD_Roadmap_Builder.html`](/documents/PhD_Roadmap_Builder.html) | The interactive roadmap builder. **One file, works offline.** | Every PhD student |
 | [`My_PhD_Tracker.pdf`](/documents/My_PhD_Tracker.pdf) / [`Mon_suivi_de_thèse.pdf`](/documents/Mon_suivi_de_thèse.pdf) | Fillable CSI tracker |
 
 <!-- ✏️ Adjust this table to the files you actually upload. -->
@@ -76,7 +76,7 @@ A PhD is long, and it is easy to lose track of where you are. The **CSI** (*comi
 > [!TIP]
 > **Nothing to install.** No account, no internet connection, no Python, no Docker.
 
-**1. Download** [`PhD_Roadmap_Builder.html`](PhD_Roadmap_Builder.html)
+**1. Download** [`PhD_Roadmap_Builder.html`](/documents/PhD_Roadmap_Builder.html)
 &nbsp;&nbsp;&nbsp;On GitHub: open the file, then click **⋯ → Download** (or the download icon ⬇️ at the top right of the file view).
 
 **2. Double-click** the file. It opens in your web browser (Chrome, Firefox, Safari or Edge).
@@ -293,7 +293,6 @@ The result is an **A3 landscape** page, ready to print or to project. A short pe
 
 ## 📝 The fillable CSI tracker (PDF)
 
-`My_PhD_Tracker.pdf` and `Mon_suivi_de_thèse.pdf` follow the criteria of the graduate school's **Document A2**.
 [`My_PhD_Tracker.pdf`](/documents/My_PhD_Tracker.pdf) and [`Mon_suivi_de_thèse.pdf`](/documents/Mon_suivi_de_thèse.pdf) follow the criteria of the graduate school's **Document A2**.
 
 1. Open the PDF in **Adobe Acrobat Reader**, **Preview** (Mac) or your browser.
