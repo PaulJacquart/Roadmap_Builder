@@ -294,6 +294,7 @@ The result is an **A3 landscape** page, ready to print or to project. A short pe
 ## 📝 The fillable CSI tracker (PDF)
 
 `My_PhD_Tracker.pdf` and `Mon_suivi_de_thèse.pdf` follow the criteria of the graduate school's **Document A2**.
+[`My_PhD_Tracker.pdf`](/documents/My_PhD_Tracker.pdf) and [`Mon_suivi_de_thèse.pdf`](/documents/Mon_suivi_de_thèse.pdf) follow the criteria of the graduate school's **Document A2**.
 
 1. Open the PDF in **Adobe Acrobat Reader**, **Preview** (Mac) or your browser.
 2. **Click a dot** to fill it in black: *Planned* · *In progress* · *Done*.
