@@ -402,6 +402,8 @@ Keep the `key` values unique. Icon names come from the `ICONS` list in the same 
 Initially made for the <b>PhD follow-up committee</b>, CSI in french.
 </div>
 
+<br>
+
 <div align="center">
 Contact: Paul Jacquart (paul.jacquart@inserm.fr)
 </div>
@@ -412,6 +414,8 @@ Graduate school CLESCO (Comportement, Langage, Education, Socialisation, Cogniti
 University of Toulouse | 
 3rd floor - Office 313 | CHU PURPAN - Pavillon Baudot Place du Dr Baylac | 31024 TOULOUSE - Cedex 3 | France
 </div>
+
+<br>
 
 <div align="center">
   <b>Questions? Ideas? Open an <a href="../../issues/new">issue</a> or contact the committee.</b>
