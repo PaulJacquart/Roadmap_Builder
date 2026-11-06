@@ -238,6 +238,8 @@ Under the timeline, **Count it every year** keeps track of what the CSI asks abo
 
 <!-- 📸 Counter tile with a goal: "6 / 10" + progress bar, and one box with ✓ -->
 <img src="illustrations/counters.mp4" alt="Counters with goals and progress bars" width="800">
+<video src="Roadmap_Builder/illustrations/counters.mp4" controls="controls" muted="muted" style="max-width: 100%;">
+</video>
 
 ---
 
