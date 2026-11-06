@@ -43,7 +43,7 @@ count what you achieve each year, and export a clean poster in PowerPoint or PDF
 - [Privacy: where is my data?](#-privacy-where-is-my-data)
 - [FAQ & troubleshooting](#-faq--troubleshooting)
 - [For maintainers](#-for-maintainers)
-  
+
 ---
 
 ## 💡 Why this tool?
@@ -65,8 +65,7 @@ A PhD is long, and it is easy to lose track of where you are. The **CSI** (*comi
 | File | What it is | Who it's for |
 |---|---|---|
 | [`PhD_Roadmap_Builder.html`](PhD_Roadmap_Builder.html) | The interactive roadmap builder. **One file, works offline.** | Every PhD student |
-| [`Fiche_suivi_EN.pdf`](Fiche_suivi_EN.pdf) / [`Fiche_suivi_FR.pdf`](Fiche_suivi_FR.pdf) | Fillable CSI tracker based on Document A2 (tick boxes and number fields). | Students preparing a CSI |
-| [`Fiche_suivi.pptx`](Fiche_suivi.pptx) | Editable source of the tracker and roadmap poster. | Committee members |
+| [`My_PhD_Tracker.pdf`](/documents/My_PhD_Tracker.pdf) / [`Mon_suivi_de_thèse.pdf`](/documents/Mon_suivi_de_thèse.pdf) | Fillable CSI tracker |
 
 <!-- ✏️ Adjust this table to the files you actually upload. -->
 
