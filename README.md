@@ -86,7 +86,7 @@ A PhD is long, and it is easy to lose track of where you are. The **CSI** (*comi
 That's it. A default three-year roadmap is already there. Adapt it to your own project.
 
 <!-- 🎞️ GIF: download → double-click → page opens → pick the start date (10 s max) -->
-<img src="illustrations/Quickstart2.gif" alt="Quick start: open the file and set your start date" width="300">
+<img src="illustrations/quickstart.gif" alt="Quick start: open the file and set your start date" width="300">
 
 ---
 
