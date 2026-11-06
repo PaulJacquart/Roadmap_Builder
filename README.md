@@ -87,7 +87,7 @@ A PhD is long, and it is easy to lose track of where you are. The **CSI** (*comi
 That's it. A default three-year roadmap is already there. Adapt it to your own project.
 
 <!-- 🎞️ GIF: download → double-click → page opens → pick the start date (10 s max) -->
-<img src="illustrations/Quickstart1.gif" alt="Quick start: open the file and set your start date" width="800">
+<img src="illustrations/Quickstart2.gif" alt="Quick start: open the file and set your start date" width="200">
 
 ---
 
@@ -237,7 +237,7 @@ Under the timeline, **Count it every year** keeps track of what the CSI asks abo
 > Set your goals **at the beginning of each year**, then update the counters before each CSI.
 
 <!-- 📸 Counter tile with a goal: "6 / 10" + progress bar, and one box with ✓ -->
-<img src="illustrations/counters.gif" alt="Counters with goals and progress bars" width="800">
+<img src="illustrations/counters.mp4" alt="Counters with goals and progress bars" width="800">
 
 ---
 
