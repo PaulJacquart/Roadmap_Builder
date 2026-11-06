@@ -44,6 +44,28 @@ count what you achieve each year, and export a clean poster in PowerPoint or PDF
 - [FAQ & troubleshooting](#-faq--troubleshooting)
 - [For maintainers](#-for-maintainers)
 
+- [Why this tool?](#-why-this-tool)
+- [What's in this repository](#-whats-in-this-repository)
+- [Quick start (2 minutes)](#-quick-start-2-minutes)
+- [Tutorial](#-tutorial)
+  <ol style="list-style-type: decimal;">
+    <li><a href="#1-set-up-your-plan">Set up your plan</a></li>
+    <li><a href="#2-add-milestones">Add milestones</a></li>
+    <li><a href="#3-edit-a-block">Edit a block</a></li>
+    <li><a href="#4-sub-blocks-break-a-task-into-steps">Sub-blocks: break a task into steps</a></li>
+    <li><a href="#5-organise-rows-into-groups">Organise rows into groups</a></li>
+    <li><a href="#6-place-your-csi-meetings">Place your CSI meetings</a></li>
+    <li><a href="#7-zoom-from-years-to-days">Zoom from years to days</a></li>
+    <li><a href="#8-yearly-counters-and-personal-goals">Yearly counters and personal goals</a></li>
+    <li><a href="#9-save-and-reopen-your-work">Save and reopen your work</a></li>
+    <li><a href="#10-export-a-poster-pptx--pdf">Export a poster (PPTX / PDF)</a></li>
+  </ol>
+- [Keyboard shortcuts](#%EF%B8%8F-keyboard-shortcuts)
+- [The fillable CSI tracker (PDF)](#-the-fillable-csi-tracker-pdf)
+- [Privacy: where is my data?](#-privacy-where-is-my-data)
+- [FAQ & troubleshooting](#-faq--troubleshooting)
+- [For maintainers](#-for-maintainers)
+
 ---
 
 ## 💡 Why this tool?
