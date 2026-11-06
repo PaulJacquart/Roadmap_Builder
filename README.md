@@ -28,7 +28,7 @@ count what you achieve each year, and export a clean poster in PowerPoint or PDF
 - [What's in this repository](#-whats-in-this-repository)
 - [Quick start (2 minutes)](#-quick-start-2-minutes)
 - [Tutorial](#-tutorial)
-  - [Set up your plan](#1-set-up-your-plan)
+  1.[Set up your plan](#1-set-up-your-plan)
   2. [Add milestones](#2-add-milestones)
   3. [Edit a block](#3-edit-a-block)
   4. [Sub-blocks: break a task into steps](#4-sub-blocks-break-a-task-into-steps)
