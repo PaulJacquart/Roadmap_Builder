@@ -405,7 +405,8 @@ Initially made for the <b>PhD follow-up committee</b>, CSI in french.
 <br>
 
 <div align="center">
-Contact: Paul Jacquart (<a href=paul.jacquart@inserm.fr>paul.jacquart@inserm.fr</a>)
+Contact: Paul Jacquart <a href="mailto:paul.jacquart@inserm.fr">(Send me an email)</a> or open an <a href="../../issues/new">issue</a>.
+</div>
 </div>
 <div align="center">
 PhD student in Neurosciences
