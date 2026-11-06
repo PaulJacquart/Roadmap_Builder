@@ -399,10 +399,18 @@ Keep the `key` values unique. Icon names come from the `ICONS` list in the same 
 ---
 
 <div align="center">
+Initially made for the **PhD follow-up committee**, CSI in french.
+</div>
 
-Made for the **PhD follow-up committee**, ToNIC (Toulouse NeuroImaging Centre, UMR 1214 Inserm/UPS)
+<div align="center">
 Contact: Paul Jacquart (paul.jacquart@inserm.fr)
+PhD student in Neurosciences
+TRACER Team | Toulouse NeuroImaging Center (ToNIC) | Inserm | 
+Graduate school CLESCO (Comportement, Langage, Education, Socialisation, Cognition) | 
+University of Toulouse | 
+3rd floor - Office 313 | CHU PURPAN - Pavillon Baudot Place du Dr Baylac | 31024 TOULOUSE - Cedex 3 | France
+</div>
 
+<div align="center">
 *Questions? Ideas? Open an [issue](../../issues) or contact the committee.*
-
 </div>
