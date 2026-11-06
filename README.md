@@ -399,9 +399,7 @@ Keep the `key` values unique. Icon names come from the `ICONS` list in the same 
 ---
 
 <div align="center">
-<details>
 Initially made for the <b>PhD follow-up committee</b>, CSI in french.
-</details>
 </div>
 
 <div align="center">
@@ -416,5 +414,5 @@ University of Toulouse |
 </div>
 
 <div align="center">
-<b>Questions? Ideas? Open an [issue](../../issues) or contact the committee.</b>
+  <b>Questions? Ideas? Open an <a href="../../issues/new">issue</a> or contact the committee.</b>
 </div>
