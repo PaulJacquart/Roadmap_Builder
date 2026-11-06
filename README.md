@@ -405,7 +405,7 @@ Initially made for the <b>PhD follow-up committee</b>, CSI in french.
 <br>
 
 <div align="center">
-Contact: Paul Jacquart <a href="mailto:paul.jacquart@inserm.fr">(Send me an email)</a> or open an <a href="../../issues/new">issue</a>.
+Contact: Paul Jacquart <a href="mailto:paul.jacquart@inserm.fr">(Send me an email)</a>.
 </div>
 </div>
 <div align="center">
@@ -419,5 +419,5 @@ University of Toulouse |
 <br>
 
 <div align="center">
-  <b>Questions? Ideas? Open an <a href="../../issues/new">issue</a> or contact the committee.</b>
+  <b>Questions? Ideas? Contact me Open an <a href="../../issues/new">issue</a> or contact the committee.</b>
 </div>
