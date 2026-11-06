@@ -14,7 +14,7 @@ count what you achieve each year, and export a clean poster in PowerPoint or PDF
 ![Browsers](https://img.shields.io/badge/Chrome%20%7C%20Firefox%20%7C%20Safari%20%7C%20Edge-supported-A9D46F)
 
 <!-- 📸 HERO IMAGE: a full screenshot of the builder with a realistic roadmap -->
-<img src="./illustrations/Global_screenshot.png" alt="Overview of the PhD Roadmap Builder" width="900">
+<img src="./illustrations/Global_screenshot.png" alt="Overview of the PhD Roadmap Builder" width="1500">
 
 [**⬇️ Download the builder**](PhD_Roadmap_Builder.html) · [Quick start](#-quick-start-2-minutes) · [Tutorial](#-tutorial) · [FAQ](#-faq--troubleshooting)
 
@@ -87,7 +87,7 @@ A PhD is long, and it is easy to lose track of where you are. The **CSI** (*comi
 That's it. A default three-year roadmap is already there. Adapt it to your own project.
 
 <!-- 🎞️ GIF: download → double-click → page opens → pick the start date (10 s max) -->
-<img src="illustrations/Quickstart2.gif" alt="Quick start: open the file and set your start date" width="200">
+<img src="illustrations/Quickstart2.gif" alt="Quick start: open the file and set your start date" width="300">
 
 ---
 
@@ -103,8 +103,8 @@ That's it. A default three-year roadmap is already there. Adapt it to your own p
 | **Title** | Click on *My PhD roadmap* | Rename it, for example *Roadmap, Paul J., 2025–2028*. |
 
 <!-- 📸 Annotated screenshot of the header: arrows pointing at title, start date, EN/FR, plan length -->
-<img src="illustrations/Setting_date.png" alt="Setting the date" width="800">
-<img src="illustrations/Setting_language.png" alt="Setting the language" width="800">
+<img src="illustrations/Setting_date.png" alt="Setting the date" width="1500">
+<img src="illustrations/Setting_language.png" alt="Setting the language" width="1500">
 
 ---
 
@@ -125,8 +125,8 @@ The timeline has two default **groups**:
 Need something that isn't in the library? Click **✏️ Create a custom block**.
 
 <!-- 🎞️ GIF: drag "Data collection" from the library onto the timeline -->
-<img src="illustrations/dragging_block.gif" alt="Dragging a task from the library and ajusting it's size" width="800">
-<img src="illustrations/milestone_creation.gif" alt="Creating a milestone event" width="800">
+<img src="illustrations/dragging_block.gif" alt="Dragging a task from the library and ajusting it's size" width="1500">
+<img src="illustrations/milestone_creation.gif" alt="Creating a milestone event" width="1500">
 
 ---
 
@@ -153,7 +153,7 @@ On the timeline itself:
 > When a title is too long for its block, it is cut at the edge. Click the block or zoom in to read it in full.
 
 <!-- 🎞️ GIF: click a block → editor opens → change colour → drag its right edge to stretch it -->
-<img src="illustrations/editing_blocks.gif" alt="Editing a block" width="800">
+<img src="illustrations/editing_blocks.gif" alt="Editing a block" width="1500">
 
 
 ---
@@ -177,7 +177,7 @@ Big tasks are easier to follow when split into steps. *Thesis writing* becomes *
 When you move a category, its sub-blocks move with it. Folded sub-blocks stay hidden in exports.
 
 <!-- 🎞️ GIF: open Thesis writing → add 3 sub-blocks → set 2 levels → fold with ▾ -->
-<img src="illustrations/subblocks_creation.gif" alt="Creating sub-blocks" width="800">
+<img src="illustrations/subblocks_creation.gif" alt="Creating sub-blocks" width="1500">
 
 ---
 
@@ -191,7 +191,7 @@ On the left edge of the timeline, each group has:
 **➕ Add a group** creates a new one, for example *Clinical work*, *Teaching duties* or *Collaboration with lab X*.
 
 <!-- 📸 Close-up of the left edge: arrows + group name + the group editor open -->
-<img src="illustrations/group_creation.gif" alt="Creating groups" width="800">
+<img src="illustrations/group_creation.gif" alt="Creating groups" width="1500">
 
 ---
 
@@ -203,7 +203,7 @@ Each **CSI** marker sits on the central axis. **Drag it to the date your committ
 > The CSI meets **before each re-registration**. Plan it early enough to prepare your documents (see the [fillable tracker](#-the-fillable-csi-tracker-pdf)).
 
 <!-- 🎞️ GIF: drag "CSI 2" a few months earlier; its date updates -->
-<img src="illustrations/csi_date.gif" alt="Adjusting CSI date" width="800">
+<img src="illustrations/csi_date.gif" alt="Adjusting CSI date" width="1500">
 
 ---
 
@@ -218,7 +218,7 @@ Each **CSI** marker sits on the central axis. **Drag it to the date your committ
 Blocks snap to what you see: to months when zoomed out, to weeks, then to days. The label next to the zoom tells you which (*snaps to weeks*…).
 
 <!-- 🎞️ GIF: zoom from the 3-year view down to days with Ctrl + scroll -->
-<img src="illustrations/zooming.gif" alt="Zoom in or Zoom out horizontaly or verticaly" width="800">
+<img src="illustrations/zooming.gif" alt="Zoom in or Zoom out horizontaly or verticaly" width="1500">
 
 ---
 
@@ -237,8 +237,7 @@ Under the timeline, **Count it every year** keeps track of what the CSI asks abo
 > Set your goals **at the beginning of each year**, then update the counters before each CSI.
 
 <!-- 📸 Counter tile with a goal: "6 / 10" + progress bar, and one box with ✓ -->
-[<video src="illustrations/counters.mp4?raw=true" autoplay loop muted playsinline width="100%">
-</video>](https://github.com/user-attachments/assets/cdb75bb9-2630-4ae1-a11a-f9d4ec1d940d)
+<img src="illustrations/counters.gif" alt="Counters with goals and progress bars" width="1500">
 
 ---
 
@@ -256,7 +255,7 @@ Your roadmap is **saved automatically in your browser**. Close the page and it w
 
 > [!WARNING]
 > Clearing your browser data (cookies, site data) also erases your roadmap. **Save a file before each CSI.**
-<img src="illustrations/saving_roadmap.gif" alt="Saving your roadmap" width="800">
+<img src="illustrations/saving_roadmap.gif" alt="Saving your roadmap" width="1500">
 ---
 
 ### 10. Export a poster (PPTX / PDF)
@@ -272,7 +271,7 @@ Click **Export PPTX** or **Export PDF**. The export window asks:
 The result is an **A3 landscape** page, ready to print or to project. A short period fills the whole page, with a ruler in days or weeks.
 
 <!-- 📸 Side by side: export window | resulting PDF (whole plan) | resulting PDF (3-month window) -->
-<img src="illustrations/exporting_roadmap.gif" alt="Saving your roadmap in PDF or in an editable Powerpoint slide" width="800">
+<img src="illustrations/exporting_roadmap.gif" alt="Saving your roadmap in PDF or in an editable Powerpoint slide" width="1500">
 
 ---
 
@@ -305,7 +304,7 @@ The result is an **A3 landscape** page, ready to print or to project. A short pe
 Greyed cells don't apply to that criterion and cannot be filled in.
 
 <!-- 📸 Tracker page with a few dots filled and numbers typed -->
-<img src="illustrations/My_PhD_Tracker_filling.gif" alt="Fillable CSI tracker in english" width="800">
+<img src="illustrations/My_PhD_Tracker_filling.gif" alt="Fillable CSI tracker in english" width="1500">
 
 ---
 
@@ -403,7 +402,7 @@ Keep the `key` values unique. Icon names come from the `ICONS` list in the same 
 <div align="center">
 
 Made for the **PhD follow-up committee**, ToNIC (Toulouse NeuroImaging Centre, UMR 1214 Inserm/UPS)
-Contact member: Paul Jacquart (paul.jacquart@inserm.fr)
+Contact: Paul Jacquart (paul.jacquart@inserm.fr)
 
 *Questions? Ideas? Open an [issue](../../issues) or contact the committee.*
 
