@@ -148,7 +148,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 /* counters */
 .counters{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px}
 .ct-head{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-.ct-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.ct-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,var(--ctw,250px)),1fr));gap:10px}
 .ct{background:var(--sunken);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:12px;border:2px solid transparent}
 .ct.sel{border-color:var(--fg)}
 .ct-top{display:flex;gap:10px;align-items:center;cursor:pointer;border-radius:8px;min-width:0;border:0;background:transparent;padding:0;text-align:left}
@@ -214,7 +214,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
   <div class="controls">
     <div class="seg" role="group" aria-label="History"><button id="undo" type="button"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg></button><button id="redo" type="button"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 14 5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"/></svg></button></div>
     <div class="seg" role="group" aria-label="Language"><button id="lang-en" type="button">EN</button><button id="lang-fr" type="button">FR</button></div>
-    <label class="field"><span data-i="duration"></span><select id="duration"><option value="36"></option><option value="48"></option></select></label>
+    <label class="field"><span data-i="duration"></span><select id="duration"></select></label>
     <button class="btn danger" id="empty" type="button"></button>
     <button class="btn primary" id="expPptx" type="button"></button>
     <button class="btn primary" id="expPdf" type="button"></button>
@@ -692,7 +692,8 @@ const UI = {
   fit:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>'
 };
 
-const YEARC = ['#8E9CF6','#6FD3E0','#A9D46F','#B4B9CC'];
+const YEARC = ['#8E9CF6','#6FD3E0','#A9D46F','#B4B9CC','#C9A2F2','#F6C26B'];
+const YEARS = [3,4,5,6];
 const SWATCH = ['#8E9CF6','#6FD3E0','#A9D46F','#B4B9CC','#F2A7A3','#F6C26B','#C9A2F2','#5FC3AE'];
 const MD = 30.4375, md = m => Math.round(m*MD);       // average month in days
 const MAXDUR = 1461;                                   // 4 years, in days
@@ -700,7 +701,7 @@ const G = { YR:46, AX:96, RUL:32 }, PADL = 56, PADR = 72;
 const ZXMAX = 45;
 
 const S = {
-  en:{ title:'My PhD roadmap', duration:'Plan length', d36:'3 years', d48:'4 years (extension)', start:'PhD start', pptx:'Export PPTX', pdf:'Export PDF',
+  en:{ title:'My PhD roadmap', duration:'Plan length', dur:y=>y===3?'3 years':`${y} years (extension)`, start:'PhD start', pptx:'Export PPTX', pdf:'Export PDF',
     library:'Milestone library', libHint:'Drag a milestone onto the timeline, or click to add it.', custom:'Create a custom block',
     gR:'Research', gS:'Skills & visibility', gO:'Milestones & mobility',
     edTitle:'Edit block', label:'Text', icon:'Symbol', color:'Colour', auto:'Colour by year',
@@ -710,14 +711,14 @@ const S = {
     dup:'Duplicate', del:'Delete', close:'Close', file:'Save your work', fileHint:'Your roadmap is kept in this browser. Save a file to continue elsewhere.',
     saveJson:'Save file', openJson:'Open file', reset:'Default roadmap', empty:'Empty roadmap', undo:'Undo', redo:'Redo', emptied:'Roadmap emptied. Undo to restore it.', resetDone:'Default roadmap restored. Undo to go back.', emptyHint:'Empty roadmap: drag milestones from the library or create a custom block',
     year:n=>n===1?'1 year':`${n} years`, mon:m=>`M${m}`, wk:w=>`W${w}`, dy:d=>`D${d}`, today:'Today', laneS:'Skills & visibility', laneR:'Research',
-    sub:d=>`${d===48?'4-year':'3-year'} plan · drag, stretch and edit the blocks`,
+    sub:d=>`${d/12}-year plan · drag, stretch and edit the blocks`,
     zoomH:'Zoom ↔', zoomV:'Rows ↕', fit:'Fit to screen', snapM:'snaps to months', snapW:'snaps to weeks', snapD:'snaps to days',
     addGroup:'Add a group', gEdit:'Edit group', gName:'Name', gRows:'Rows', gDel:'Delete group and its blocks', gUp:'Move group up', gDown:'Move group down', newGroup:'New group', lastGroup:'At least one group is needed.',
     csiTip:'Drag to the date the CSI is planned',
     foot:'<span><b>CSI</b> individual follow-up committee: drag each CSI to its planned date</span><span>Ctrl + scroll to zoom · select a block, then ← → to move, Shift+← → to resize, Delete to remove · Ctrl+Z / Ctrl+Y to undo / redo</span>',
     counters:'Yearly counters', ctHint:'Click to add a counter below the timeline. Use the arrows or type the numbers; set goals in each counter.', customCt:'Create a custom counter', ctEdit:'Edit counter', ctTitle:'Title', ctUnit:'Unit', goals:'Personal goals per year', total:'total', mvL:'Move left', mvR:'Move right', newCt:'New counter', newUnit:'number', countHead:'Count it every year', yShort:'Y', ctEmpty:'No counters yet. Add one from the panel on the left.', goalOf:'goal',
     newBlock:'New block', saved:'Saved', noDl:'Downloads are not available in this view', building:'Building file…', opened:'Roadmap loaded', badFile:'This file is not a roadmap saved from this page' },
-  fr:{ title:'Mon parcours doctoral', duration:'Durée', d36:'3 ans', d48:'4 ans (prolongation)', start:'Début de thèse', pptx:'Exporter PPTX', pdf:'Exporter PDF',
+  fr:{ title:'Mon parcours doctoral', duration:'Durée', dur:y=>y===3?'3 ans':`${y} ans (prolongation)`, start:'Début de thèse', pptx:'Exporter PPTX', pdf:'Exporter PDF',
     library:'Bibliothèque de jalons', libHint:'Glissez un jalon sur la frise, ou cliquez pour l’ajouter.', custom:'Créer un bloc personnalisé',
     gR:'Recherche', gS:'Compétences & visibilité', gO:'Jalons & mobilité',
     edTitle:'Modifier le bloc', label:'Texte', icon:'Symbole', color:'Couleur', auto:'Couleur par année',
@@ -727,7 +728,7 @@ const S = {
     dup:'Dupliquer', del:'Supprimer', close:'Fermer', file:'Enregistrer', fileHint:'Votre frise est conservée dans ce navigateur. Enregistrez un fichier pour la reprendre ailleurs.',
     saveJson:'Enregistrer le fichier', openJson:'Ouvrir un fichier', reset:'Frise par défaut', empty:'Vider la frise', undo:'Annuler', redo:'Rétablir', emptied:'Frise vidée. Annulez pour la restaurer.', resetDone:'Frise par défaut restaurée. Annulez pour revenir en arrière.', emptyHint:'Frise vide : glissez des jalons depuis la bibliothèque ou créez un bloc personnalisé',
     year:n=>n===1?'1 an':`${n} ans`, mon:m=>`M${m}`, wk:w=>`S${w}`, dy:d=>`J${d}`, today:'Aujourd’hui', laneS:'Compétences & visibilité', laneR:'Recherche',
-    sub:d=>`Plan sur ${d===48?'4':'3'} ans · glissez, étirez et modifiez les blocs`,
+    sub:d=>`Plan sur ${d/12} ans · glissez, étirez et modifiez les blocs`,
     zoomH:'Zoom ↔', zoomV:'Lignes ↕', fit:'Ajuster à l’écran', snapM:'aimanté au mois', snapW:'aimanté à la semaine', snapD:'aimanté au jour',
     addGroup:'Ajouter un groupe', gEdit:'Modifier le groupe', gName:'Nom', gRows:'Lignes', gDel:'Supprimer le groupe et ses blocs', gUp:'Monter le groupe', gDown:'Descendre le groupe', newGroup:'Nouveau groupe', lastGroup:'Il faut garder au moins un groupe.',
     csiTip:'Glissez à la date prévue du CSI',
@@ -779,7 +780,7 @@ const CPM = Object.fromEntries(CP.map(c=>[c[0],{key:c[0],icon:c[1],en:[c[2],c[3]
 
 const uid = () => Math.random().toString(36).slice(2,9);
 const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
-const newCounter = key => ({id:uid(), key:key||null, icon: key && CPM[key] ? CPM[key].icon : 'star', title:null, unit:null, values:['','','',''], goals:['','','','']});
+const newCounter = key => ({id:uid(), key:key||null, icon: key && CPM[key] ? CPM[key].icon : 'star', title:null, unit:null, values:['','','','','',''], goals:['','','','','','']});
 const defaultCounters = () => ['training','labtalk','conference','publication','teaching','mentoring','repr'].map(newCounter);
 const defaultGroups = () => [{id:'gR', key:'R', name:null, rows:4}, {id:'gS', key:'S', name:null, rows:4}];
 const defaultCsi = months => Array.from({length:months/12}, (_,i)=>({id:uid(), day:md(12*(i+1))}));
@@ -800,12 +801,12 @@ function migrate(o){
     if(typeof o.startDate==='string' && /^\d{4}-\d{2}$/.test(o.startDate)) o.startDate += '-01';
     o.v = 3;
   }
-  o.months = o.months===48 ? 48 : 36;
+  o.months = YEARS.includes(o.months/12) ? o.months : 36;
   if(!Array.isArray(o.groups) || !o.groups.length) o.groups = defaultGroups();
   o.groups.forEach(g=>{ g.rows = clamp(Math.round(+g.rows||2),1,8); if(!g.id) g.id=uid() });
   if(!Array.isArray(o.csi)) o.csi = defaultCsi(o.months);
   if(!Array.isArray(o.counters)) o.counters = defaultCounters();
-  o.counters.forEach(c=>{ if(!Array.isArray(c.values)) c.values=['','','','']; if(!Array.isArray(c.goals)) c.goals=['','','',''] });
+  o.counters.forEach(c=>{ if(!Array.isArray(c.values)) c.values=['','','','','','']; if(!Array.isArray(c.goals)) c.goals=['','','','','',''] });
   if(typeof o.startDate!=='string' || !/^\d{4}-\d{2}-\d{2}$/.test(o.startDate)) o.startDate='';
   const gmap = Object.fromEntries(o.groups.map(g=>[g.id,g]));
   o.blocks.forEach(b=>{ if(!gmap[b.g]) b.g = o.groups[0].id; b.row = clamp(Math.round(+b.row||0), 0, gmap[b.g].rows-1); b.start=Math.round(+b.start||0); b.dur=Math.round(+b.dur||0) });
@@ -832,7 +833,7 @@ const labelOf = b => b.text ?? (b.key && PM[b.key] ? PM[b.key][st.lang] : T('new
 const groupName = g => g.name ?? (g.key==='R' ? T('laneR') : g.key==='S' ? T('laneS') : T('newGroup'));
 const ctTitle = c => c.title ?? (c.key && CPM[c.key] ? CPM[c.key][st.lang][0] : T('newCt'));
 const ctUnit = c => c.unit ?? (c.key && CPM[c.key] ? CPM[c.key][st.lang][1] : T('newUnit'));
-const colorOf = b => b.color && b.color!=='auto' ? b.color : YEARC[clamp(Math.floor(b.start/md(12)), 0, 3)];
+const colorOf = b => b.color && b.color!=='auto' ? b.color : YEARC[clamp(Math.floor(b.start/md(12)), 0, YEARC.length-1)];
 const rgba = (hex,a) => { const n=parseInt(hex.slice(1),16); return `rgba(${n>>16},${(n>>8)&255},${n&255},${a})` };
 const num = v => { const x = parseFloat(String(v??'').replace(',','.')); return isFinite(x) ? x : 0 };
 const fmtNum = x => String(Math.round(x*100)/100);
@@ -911,7 +912,7 @@ function renderChrome(){
   document.documentElement.lang = st.lang;
   document.querySelectorAll('[data-i]').forEach(el=>el.textContent=T(el.dataset.i));
   $('lang-en').setAttribute('aria-pressed', st.lang==='en'); $('lang-fr').setAttribute('aria-pressed', st.lang==='fr');
-  const d=$('duration'); d.options[0].textContent=T('d36'); d.options[1].textContent=T('d48'); d.value=String(st.months);
+  const d=$('duration'); d.innerHTML = YEARS.map(y=>`<option value="${y*12}">${esc(T('dur')(y))}</option>`).join(''); d.value=String(st.months);
   $('startDate').value = st.startDate||'';
   $('docTitle').value = st.title ?? T('title');
   $('subtitle').textContent = T('sub')(st.months);
@@ -1400,7 +1401,7 @@ function buildModel(opt){
       if(w >= 1.0 && d >= 0.14){
         P.push({t:'oval', x:x+0.07, y:yy+(h-d)/2, w:d, h:d, f:c});
         P.push({t:'img', icon:b.icon, x:x+0.07+d*0.25, y:yy+(h-d)/2+d*0.25, w:d*0.5, h:d*0.5});
-        P.push({t:'text', x:x+d+0.14, y:yy, w:w-d-0.24, h, s:bfs, b:true, c:INK, text:lab, al:'left', clip:true, ml: b.sub || h < bfs/72*2.6 ? 1 : 2});
+        P.push({t:'text', x:x+d+0.14, y:yy, w:w-d-0.24, h, s:bfs, b:true, c:INK, text:lab, al:'left', clip:true, ml: b.sub || h < bfs/72*2.6 || w < 1.6 ? 1 : 2});
       } else if(w >= 0.16){
         P.push({t:'text', x:x+0.05, y:yy, w:w-0.1, h, s:bfs, b:true, c:INK, text:lab, al:'left', clip:true, ml:1});
       }
@@ -1415,7 +1416,7 @@ function buildModel(opt){
   if(n){
     const top0 = rulTop + 0.8, X0 = 0.6, W = PW - 1.2, bottom = PH - 0.35;
     P.push({t:'text', x:X0, y:top0, w:6, h:0.28, s:12, b:true, c:MUTED, text:T('countHead'), al:'left'});
-    const rows = Math.ceil(n/8), cols = Math.ceil(n/rows), gap = 0.15, ty0 = top0 + 0.38;
+    const maxCols = yrs<=4 ? 8 : yrs===5 ? 6 : 5, rows = Math.ceil(n/maxCols), cols = Math.ceil(n/rows), gap = 0.15, ty0 = top0 + 0.38;
     const tw = (W - (cols-1)*gap)/cols, th = Math.min(1.2, (bottom - ty0 - (rows-1)*0.12)/rows);
     const d = Math.min(0.5, th*0.42), bh = Math.min(0.46, th*0.4);
     st.counters.forEach((c,k)=>{
@@ -1528,7 +1529,7 @@ function openExport(fmt){
   if(E.from===null || E.to===null || E.to>Dd){ E.from = v0; E.to = v1 }
   $('expX').innerHTML = UI.x; $('expX').setAttribute('aria-label', T('close'));
   document.querySelectorAll('#expDlg [data-fmt]').forEach(b=>b.setAttribute('aria-pressed', b.dataset.fmt===E.fmt));
-  $('expAllLbl').textContent = `${T('expAll')} (${T(st.months===48?'d48':'d36')})`;
+  $('expAllLbl').textContent = `${T('expAll')} (${T('dur')(st.months/12)})`;
   $('expViewLbl').textContent = `${T('expView')} (${rangeLabel(v0,v1)})`;
   document.querySelectorAll('#expDlg [name=expWin]').forEach(r=>r.checked = r.value===E.win);
   const ud = unitDays(view.unit);
@@ -1593,7 +1594,7 @@ document.addEventListener('keydown', e=>{
 /* ---------- yearly counters ---------- */
 function renderCounters(){
   const yrs = st.months/12, el = $('counters');
-  el.innerHTML = `<div class="ct-head">${esc(T('countHead'))}</div>` + (st.counters.length ? `<div class="ct-grid">` + st.counters.map(c=>{
+  el.innerHTML = `<div class="ct-head">${esc(T('countHead'))}</div>` + (st.counters.length ? `<div class="ct-grid" style="--ctw:${Math.max(250, 70+yrs*58)}px">` + st.counters.map(c=>{
     const tot = c.values.slice(0,yrs).reduce((a,v)=>a+num(v),0), tgoal = c.goals.slice(0,yrs).reduce((a,v)=>a+num(v),0);
     return `<div class="ct${c.id===csel?' sel':''}" data-cid="${c.id}">
     <button type="button" class="ct-top" aria-label="${esc(T('ctEdit'))}: ${esc(ctTitle(c))}"><span class="ic">${svg(c.icon)}</span><div style="min-width:0"><b>${esc(ctTitle(c))}</b><small>${esc(ctUnit(c))}${tgoal?` · ${esc(T('total'))} <em>${fmtNum(tot)}/${fmtNum(tgoal)}</em>`:''}</small></div></button>
